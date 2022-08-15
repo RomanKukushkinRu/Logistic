@@ -651,8 +651,8 @@ input::placeholder {
     box-shadow: 0 10px 20px 1px;
     text-align: center;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 86px;
+    left: 6px;
 }
 
 .mission__text {
@@ -664,6 +664,11 @@ input::placeholder {
     font-size: 21px;
 }
 .mission__line {
+    width: 800px;
+    background: linear-gradient(to right ,#004AF2 0, #004AF2 50%, #FC2C2B 50%, #FC2C2B 100%);
+    height: 5px;
+    margin: 0 auto;
+    margin-top: 53px;
 }
 .mission__btn {
     width: 209px;
@@ -686,30 +691,30 @@ input::placeholder {
 
 /* Read */
 
+.read {
+    margin-bottom: 120px;
+}
+
 .read__title {
     font-size: 45px;
     color: black;
     font-weight: 900;
     margin-bottom: 48px;
 }
-.blue {
-}
+
+
 .read__info {
     display: flex;
     flex-direction: row;
-    
-    margin: 0 -50px;
+    justify-content: space-between;
 }
 .read__col {
     margin-bottom: 50px;
-    padding:0 50px;
     max-width: 500px;
     width: 100%;
+    
 }
 
-.read__auto {
-    margin-left: auto;
-}
 .read__col-title {
     font-size: 18px;
     font-weight: 700;
@@ -719,8 +724,8 @@ input::placeholder {
 .read__col-text {
     margin-bottom: 14px;
 }
-.read__col-date {
-}
+
+
 .read_btn {
     width: 209px;
     font-size: 18px;
@@ -738,6 +743,63 @@ input::placeholder {
     margin: 0;
     text-align: center;
     box-shadow: 0px 10px 10px 6px rgb(25, 25, 25, .10);
+}
+
+
+.footer {
+    background: #F9F9F9;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__logo {
+    padding-bottom: 41px;
+    text-align: center;
+}
+.footer__address {
+    text-align: center;
+}
+.footer__data {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.footer__links-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    
+}
+
+.footer__link-item {
+    color: #004AF2;
+}
+
+.footer__tire-left {
+    position: absolute;
+    bottom: -116px;
+    left: -177px;
+}
+
+.footer__tire-left img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.footer__tire-right {
+
+    position: absolute;
+    bottom: -116px;
+    right: -177px;
+}
+
+.footer__tire-right img {
+    max-width: 500px;
+    width: 100%;
 }
    
   
