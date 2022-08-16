@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 600px;
     max-width: 100%;
     background-color: #b0c7fc;
-    background-image: url(/img/intro_bg.jpg);
+    background-image: url(img/intro_bg.jpg);
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -210,14 +210,14 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 .icon1 {
-    background-image: url(/img/ios-person.svg);  
+    background-image: url(img/ios-person.svg);  
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: 14px 7px;
 }
 
 .icon2 {
-    background-image: url(/img/ios-call.svg);  
+    background-image: url(img/ios-call.svg);  
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: 14px 5px;
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon3 {
-    background-image: url(/img/ios-mail.svg);  
+    background-image: url(img/ios-mail.svg);  
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: 14px 9px;
@@ -616,13 +616,13 @@ input::placeholder {
 
 .team__email {
     padding-left: 20px;
-    background: url(/img/black_letter.svg)  0 7px  no-repeat;
+    background: url(img/black_letter.svg)  0 7px  no-repeat;
     
 }
 
 .team__phone {
     padding-left: 20px;
-    background: url(/img/black__call.svg)  0 7px  no-repeat;
+    background: url(img/black__call.svg)  0 7px  no-repeat;
     margin-bottom: 10px;
 }
 
