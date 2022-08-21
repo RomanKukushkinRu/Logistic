@@ -413,7 +413,7 @@ input::placeholder {
 }
 
 .clients--map {
-    background: url(/img/map.jpg) left 25px top 100px no-repeat;
+    background: url(img/map.jpg) left 25px top 100px no-repeat;
 }
 
 .clients__wrapper {
@@ -810,10 +810,11 @@ input::placeholder {
 }
 
 .footer {
-    background: #F9F9F9;
     padding: 40px 0;
     position: relative;
     overflow: hidden;
+    background: url(img/tire-track-png-3.png) bottom -73px left -37px no-repeat, url(img/tire-track-png-3_right.png) bottom -73px right -37px no-repeat; 
+    background-size: 315px 171px, 315px 171px;
 }
 
 .footer__logo {
@@ -858,27 +859,8 @@ input::placeholder {
     color: #004AF2;
 }
 
-.footer__tire-left {
-    position: absolute;
-    bottom: -91px;
-    left: -87px;
-}
 
-.footer__tire-left img {
-    max-width: 500px;
-    width: 100%;
-}
 
-.footer__tire-right {
-    position: absolute;
-    bottom: -91px;
-    right: -87px;
-}
-
-.footer__tire-right img {
-    max-width: 500px;
-    width: 100%;
-}
 
 /* Main */
 
@@ -952,6 +934,10 @@ margin-bottom: 20px;
     .clients {
         margin-bottom: 82px;
     }
+    
+    .mission__btn {
+        margin: 182px auto 66px auto;
+    }
 }
 
 @media ( max-width: 1140px){
@@ -1000,6 +986,10 @@ margin-bottom: 20px;
 
     .clients__logo6 img{
         width: 150px;
+    }
+
+    .mission__text {
+        font-size: 26px;
     }
 }
 
@@ -1063,7 +1053,6 @@ margin-bottom: 20px;
         margin-bottom: 30px;
     }
 }
-
 
 @media ( max-width: 858px){
     .intro__name {
@@ -1156,14 +1145,14 @@ margin-bottom: 20px;
     }
 
 
-    .footer__tire-left img {
-        max-width: 322px;
+    .footer{
+        background: url(img/tire-track-png-3.png) bottom -73px left -37px no-repeat, url(img/tire-track-png-3_right.png) bottom -73px right -37px no-repeat; 
+        background-size: 315px 171px, 315px 171px;
+        
+
     }
 
-    .footer__tire-left {
-        bottom: -62px;
-        left: -104px;
-    }
+    
 
     .footer {
         padding: 17px 0;
@@ -1181,6 +1170,24 @@ margin-bottom: 20px;
     }
 
 }
+
+@media (max-width: 800px) {
+    .mission__container {
+        width: 89%;
+        left: 45px;
+    }
+
+    .mission__text {
+        font-size: 24px;
+    }
+
+    .mission__book {
+        font-size: 18px;
+    }
+
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -1255,7 +1262,28 @@ margin-bottom: 20px;
         text-align: center;
         margin-left: 0px;
     }
+
+    .mission__container {
+        width: 88%;
+        left: 46px;
+    }
 }
+
+
+@media ( max-width: 715px){
+
+    .mission__text {
+        font-size: 22px;
+    }
+
+    .mission__container {
+        min-height: 183px;
+        padding-top: 38px;
+    }
+
+}
+
+
 
 
 @media ( max-width: 700px){
@@ -1343,6 +1371,23 @@ margin-bottom: 20px;
         margin-top: 11px;
     }
 
+    .traits__dashed-line {
+        width: 120px;
+        top: 98px;
+        left: -38px;
+    }
+
+    .traits__gray {
+        width: 24px;
+        left: 10px;
+    }
+
+    .traits__green {
+        bottom: 376px;
+        left: 10px;
+        width: 24px;
+    }
+
     .btn {
         margin: 22px 0 0;
     }
@@ -1387,7 +1432,16 @@ margin-bottom: 20px;
         flex-wrap: wrap;
         margin: 0 -20px;
         padding-right: 0px;
-        
+    }
+
+    .traits__info {
+        margin-bottom: 20px;
+    }
+
+    .traits__photo {
+        margin: 0 auto;
+        width: 500px;
+        max-width: 100%;
     }
 
     .traits__item {
@@ -1402,6 +1456,7 @@ margin-bottom: 20px;
     .traits__text {
         margin-top: auto;
     }
+
 }
 
 @media ( max-width: 650px){
@@ -1428,6 +1483,37 @@ margin-bottom: 20px;
 
     .means__services {
         font-size: 70px;
+    }
+}
+
+@media ( max-width: 630px){
+    .mission__phrase {
+        font-size: 68px;
+    }
+
+    .mission__container {
+        padding-top: 36px;
+        top: 65px;
+    }
+
+    .mission__text {
+        font-size: 20px;
+    }
+
+    .mission__book {
+        font-size: 16px;
+    }
+
+    .mission__container {
+        min-height: 160px;
+    }
+}
+
+@media ( max-width: 608px){
+    .traits__dashed-line {
+        width: 161px;
+        top: 113px;
+        left: -58px;
     }
 }
 
@@ -1479,6 +1565,25 @@ margin-bottom: 20px;
         margin-top: 10px;
     }
 }
+
+
+@media ( max-width: 570px){
+    .mission__text {
+        font-size: 18px;
+    }
+
+    .mission__book {
+        font-size: 14px;
+    }
+
+    .mission__container {
+        min-height: 150px;
+    }
+}
+
+
+
+
 
 @media ( max-width: 560px){
 
@@ -1539,8 +1644,57 @@ margin-bottom: 20px;
     .clients__logo1 img {
         width: 88px;
     }
+
+    .mission__container {
+        width: 88%;
+        left: 33px;
+    }
+
+    .mission__btn {
+        margin: 152px auto 50px auto;
+    }
     
     
+}
+
+@media ( max-width: 525px){
+    .traits__green {
+        display: none;
+    }
+
+    .traits__gray {
+        left: 0px;
+    }
+
+    .traits__dashed-line {
+        width: 119px;
+        top: 106px;
+        left: -48px;
+    }
+
+    .traits__info-container{
+        position: relative;
+        background: url(/img/greenpin.svg) no-repeat bottom 21px left;
+    }
+
+
+}
+
+@media ( max-width: 520px){
+    .mission__phrase {
+        font-size: 58px;
+    }
+
+    .mission__container {
+        padding-top: 33px;
+        top: 58px;
+    }
+
+    .mission__text {
+        font-size: 17px;
+        max-width: 383px;
+        margin: 0 auto;
+    }
 }
 
 @media ( max-width: 515px){
@@ -1593,6 +1747,8 @@ margin-bottom: 20px;
 
 }
 
+
+
 @media ( max-width: 510px){
 
     .traits__info {
@@ -1605,6 +1761,38 @@ margin-bottom: 20px;
 
     .traits__title {
         font-size: 21px;
+    }
+
+    .traits__dashed-line {
+        width: 275px;
+        top: 174px;
+        left: -115px;
+    }
+    
+    .traits__dashed-line {
+        width: 260px;
+        top: 165px;
+        left: -118px;
+    }
+
+    .mission__container {
+        padding-top: 28px;
+    }
+
+    .mission__book {
+        font-size: 13px;
+    }
+
+    .mission__container {
+        min-height: 139px;
+    }
+
+    .mission__text {
+        font-size: 19px;
+    }
+
+    .mission__book {
+        font-size: 12px;
     }
 }
 
@@ -1634,6 +1822,13 @@ margin-bottom: 20px;
     input::placeholder {
         font-size: 10px;
     }
+
+    .mission__container {
+        width: 88%;
+        left: 31px;
+    }
+
+    
 }
 
 @media ( max-width: 460px){
@@ -1760,14 +1955,269 @@ margin-bottom: 20px;
     }
 
     .button {
-         font-size: 15px;
+        font-size: 15px;
     }
-   
+
+    .mission__container {
+        left: 28px;
+    }
+}
+
+@media ( max-width: 450px){
+    .mission__text {
+        font-size: 17px;
+    }
+
+    .mission__book {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+    .mission__container {
+        min-height: 125px;
+    }
+
+    .read__title {
+        font-size: 40px;
+    }
+}
+
+@media ( max-width: 440px){
+    .means__services {
+        font-size: 67px;
+    }
+}
+
+@media ( max-width: 420px){
+    .mission__phrase {
+        font-size: 48px;
+    }
+
+    .mission__container {
+        top: 49px;
+    }
+
+    .clients__button {
+        margin: 53px 0 0 3px;
+    }
+
+    .clients__text {
+        margin: 51px 0 0 20px;
+    }
+}
+
+@media ( max-width: 415px){
+    .clients__logo5 img {
+        width: 167px;
+    }
+
+    .clients__logo4 img {
+        width: 77px;
+    }
+
+    .clients__logo1 img {
+        width: 83px;
+    }
+
+    .clients__logo6 img {
+        width: 124px;
+    }
+
+    .clients__logo7 img {
+        width: 164px;
+    }
+
+    .clients__logo8 img {
+        width: 168px;
+    }
+
+    .clients__logo3 img {
+        width: 174px;
+    }
+
+    .clients__logo2 img {
+        width: 153px;
+    }
+    
+    .team__photo {
+        width: 300px;
+    }
+}
+
+@media ( max-width: 407px){
+    .clients__button {
+        width: 156px;
+    }
+}
+
+@media ( max-width: 400px){
+    .mission__text {
+        font-size: 16px;
+    }
+    .mission__book {
+        font-size: 10px;
+    }
+
+    .mission__container {
+        min-height: 115px;
+    }
+}
+
+@media ( max-width: 380px){
+    .clients__logo8 img {
+        width: 147px;
+    }
+
+    .clients__logo7 img {
+        width: 145px;
+    }
+
+    .clients__logo5 img {
+        width: 143px;
+    }
+
+    .clients__logo3 img {
+        width: 146px;
+    }
+
+    .clients__logo4 img {
+        width: 70px;
+    }
+
+    .clients__logo2 img {
+        width: 145px;
+    }
+
+    .clients__logo1 img {
+        width: 71px;
+    }
+
+    .mission__container {
+        left: 24px;
+    }
+    
+    .means__services {
+        font-size: 56px;
+    }
+
+    .clients__text {
+        font-size: 13px;
+    }
+    
+    .clients__heart {
+        width: 33px; 
+        top: -4%;
+        left: 14%;
+        
+    }
 
 }
 
+@media ( max-width: 360px){
+    .mission__phrase {
+        font-size: 40px;
+    }
+
+    .mission__container {
+        top: 40px;
+    }
+
+    .intro__frame2 {
+        width: 311px;
+    }
+
+    .intro_line {
+        margin-top: 14px;
+    }
+
+    input::placeholder {
+
+        font-size: 14px;
+    }
+
+    .intro__description {
+        font-size: 12px;
+    }
+}
+
+@media ( max-width: 345px){
+    .mission__container {
+        left: 22px;
+    }
+
+    .team__photo {
+        box-shadow: 0px 8px 16px 0 rgb(0 0 0 / 50%);
+    }
+
+    .mission__container {
+        box-shadow: 0 6px 9px -2px;
+    }
+
+    .means__inner {
+        box-shadow: 0 5px 11px rgb(0 0 0 / 20%);
+    }
+
+    .intro__wrapper {
+        padding: 9px 10px 0 13px;
+    }
+
+    .intro__frame2 {
+        width: 302px;
+    }
+
+    .clients__logo7 img {
+        width: 125px;
+    }
+
+    .clients__logo8 img {
+        width: 132px;
+    }
+
+    .clients__logo6 img {
+        width: 113px;
+    }
+
+    .clients__logo5 img {
+        width: 139px;
+    }
+
+    .clients__logo4 img {
+        width: 66px;
+    }
+
+    .clients__logo1 img {
+        width: 65px;
+    }
+
+    .clients__comment {
+        padding-left: 11px;
+    }
+
+    .clients__text {
+        margin: 58px 0 0 23px;
+        font-size: 12px;
+    }
+
+    .clients__button {
+        width: 163px;
+    }
+
+    .mission__text {
+        font-size: 15px;
+    }
+
+    .mission__book {
+        font-size: 9px;
+    }
+
+    .mission__container {
+        min-height: 110px;
+    }
+
+    
 
 
+}
 
     
 
