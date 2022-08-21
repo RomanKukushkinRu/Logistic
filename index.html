@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Logistic</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +17,11 @@
 
                         <!-- Header -->
 
-    <header class="header">
+    <header class="header header--dark">
         <div class="container">
             <div class="header__row">
                 
-                <img src="img/logo.svg" alt="logo">
+                <a class="header__logo" href="/index.html"><img src="img/logo.svg" alt="logo"></a>
                 
                 <nav class="header__navigation">
                     <a class="nav__link active" href="#"> Services</a>  
@@ -31,6 +31,14 @@
                     <a class="nav__link" href="#">News</a>
                     <a class="nav__link" href="#">Contact Us</a>  
                 </nav>
+
+                <div class="header__burger">
+                    <span class="header__menu"></span>
+                    <span class="header__menu header__menu-pad"></span>
+                    <span class="header__menu"></span>
+                </div>
+
+                
             </div>
         </div>
     </header> 
@@ -54,7 +62,7 @@
                                     <input class="intro_line icon3" type="email" placeholder="Your e-mail">
                                 </div>
                             </form>                        
-                            <button class="btn">Call me back</button>
+                            <button class="btn button btn515px">Call me back</button>
                         </div>
                     </div>
                 </div>
@@ -66,7 +74,25 @@
                     </h1>
                 </div>
             </div>
+
         </div>
+        
+        <div class="intro__frame2">
+                <div class="intro__wrapper">
+                    <h2 class="intro__head">Get Callback</h2>
+                    <div class="intro__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</div>
+                </div>
+                <div class="intro__wrapper2">                          
+                    <form class="form" action="/">
+                        <div class="form__group">
+                            <input class="intro_line icon1" type="text" placeholder="Your name">
+                            <input class="intro_line icon2" type="tel" placeholder="Your phone">
+                            <input class="intro_line icon3" type="email" placeholder="Your e-mail">
+                        </div>
+                    </form>                        
+                    <button class="btn button">Call me back</button>
+                </div>
+            </div>
     
     </section>
 
@@ -172,7 +198,7 @@
                     </ul>
 
                     <div class="clients__button-wrapper">
-                        <div class="clients__button">Become a client</div>
+                        <div class="clients__button button">Become a client</div>
                         <div   div class="clients__text">we love our clients
                             <span><img class="clients__heart" src="img/heart.svg" alt="/"></span>
                         </div>
@@ -185,16 +211,27 @@
                             <img class="clients__lines" src="img/lines.svg" alt="/">
                             
                         </div>
+
                         <div class="clients__row">
                             <h2 class="clients__name">John Smith</h2>
                             <div class="clients__post">FOX Hub CEO</div>
                         </div>
                     </div>
+                    
                     <div class="clients__paragraph">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati porro provident neque. Laboriosam dolores quibusdam rerum ipsum impedit saepe adipisci minima nemo libero beatae. Dolore reprehenderit pariatur quidem aliquid harum.</p>
                         <br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit maxime autem nostrum delectus ipsam?</p>
                     </div>
+
+                    <div class="clients__button-wrapper2">
+                        <div class="clients__button button">Become a client</div>
+                        <div   div class="clients__text">we love our clients
+                            <span><img class="clients__heart" src="img/heart.svg" alt="/"></span>
+                        </div>
+                    </div>
+                    
+
                 </div>
             </div>
         </div>
@@ -251,8 +288,8 @@
                         </div>
                         <h2 class="team__name">John Smith</h2>
                         <div class="team__post">Logistic manager - 8 years experience</div>
-                        <div class="team__email">john@centerlogistic.com</div>
-                        <div class="team__phone">+987412512543</div>
+                        <div class="team__email"><a href="mailto:john@centerlogistic.com">john@centerlogistic.com</a></div>
+                        <div class="team__phone"><a href="tel:+987412512543">+987412512543</a></div>
 
                     </div>
 
@@ -262,8 +299,8 @@
                         </div>
                         <h2 class="team__name">Daniel Kore</h2>
                         <div class="team__post">Software engineer</div>
-                        <div class="team__email">daniel@centerlogistic.com</div>
-                        <div class="team__phone">+987423252253</div>
+                        <div class="team__email"><a href="mailto:daniel@centerlogistic.com">daniel@centerlogistic.com</a></div>
+                        <div class="team__phone"><a href="tel:+987423252253">+987423252253</a></div>
 
                     </div>
 
@@ -273,8 +310,8 @@
                         </div>
                         <h2 class="team__name">Anna Filler</h2>
                         <div class="team__post">Marketing specialist - 10 years experience</div>
-                        <div class="team__email">anna@centerlogistic.com</div>
-                        <div class="team__phone">+98735353456</div>
+                        <div class="team__email"><a href="mailto:anna@centerlogistic.com">anna@centerlogistic.com</a></div>
+                        <div class="team__phone"><a href="tel:+98735353456">+98735353456</a></div>
 
                     </div>
                 </div>
@@ -290,7 +327,9 @@
                 <div class="mission__book">Book your Cargo now & Your job just got a lot easier</div>
                 <hr class="mission__line">
             </div>
-            <div class="mission__btn">Become a client</div>
+            <div class="text-center">
+                <button type="button" class="mission__btn button">Become a client</button>
+            </div>
         </div>
     </section>
 
@@ -299,17 +338,17 @@
             <h2 class="read__title"> <span class="blue">Interesting</span>  to read</h2>
             <div class="read__info">
                 <div class="read__col">
-                    <div class="read__col-title">News title</div>
+                    <div class="read__col-title"><a href="#">News title</a></div>
                     <div class="read__col-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</div>
-                    <div class="read__col-date">21 March, 2019</div>
+                    <time pubdate datetime="2019-03-21" class="read__col-date">21 March, 2019</time>
                 </div>
                 <div class="read__col">
-                    <div class="read__col-title">News title</div>
+                    <div class="read__col-title"><a href="#">News title</a></div>
                     <div class="read__col-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </div>
-                    <div class="read__col-date">21 March, 2019</div>
+                    <time pubdate datetime="2019-03-21" class="read__col-date">21 March, 2019</time>
                 </div>
             </div>
-            <div class="read_btn">Visit blog</div>
+            <div class="read_btn button">Visit blog</div>
         </div>
     </section>
 
@@ -317,15 +356,14 @@
         <div class="container">
             <div class="footer__logo"><img src="img/logoBlack.svg" alt=""></div>
             <address class="footer__address">New York, Street, ZIP code</address>
-            <div class="footer__data">Call Us: +9948373123 or E-mail: hello@centerlogistic.com</div>
+            <div class="footer__data">Call Us: <a href="tel:+9948373123">+9948373123</a>  or E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></div>
             <ul class="footer__links-list">
-                <li><a class="footer__link-item" href="/">Terms & Contidions</a></li>
-                <li><a class="footer__link-item" href="/">Privacy Policy</a></li>
-                <li><a class="footer__link-item" href="">Our blog</a></li>
+                <li><a class="footer__link-item" href="/index.html">Terms & Contidions</a></li>
+                <li><a class="footer__link-item" href="/privacy.html">Privacy Policy</a></li>
+                <li><a class="footer__link-item" href="/blog.html">Our blog</a></li>
             </ul>
-            
-
         </div>
+
         <div class="footer__tire-left">
             <img src="img/tire-track-png-3.png" alt="">
         </div>
