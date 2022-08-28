@@ -12,6 +12,8 @@
     
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -24,18 +26,20 @@
                 <a class="header__logo" href="/index.html"><img src="img/logo.svg" alt="logo"></a>
                 
                 <nav class="header__navigation">
-                    <a class="nav__link active" href="#"> Services</a>  
-                    <a class="nav__link" href="#">Clients</a> 
-                    <a class="nav__link" href="#">Benefits</a>
-                    <a class="nav__link" href="#">Team</a>
-                    <a class="nav__link" href="#">News</a>
-                    <a class="nav__link" href="#">Contact Us</a>  
+                    <div class="header__menu">
+                        <a class="nav__link active" href="#"> Services</a>  
+                        <a class="nav__link" href="#">Clients</a> 
+                        <a class="nav__link" href="#">Benefits</a>
+                        <a class="nav__link" href="#">Team</a>
+                        <a class="nav__link" href="#">News</a>
+                        <a class="nav__link" href="#">Contact Us</a>  
+                    </div>
                 </nav>
 
                 <div class="header__burger">
-                    <span class="header__menu"></span>
-                    <span class="header__menu header__menu-pad"></span>
-                    <span class="header__menu"></span>
+                    <span class="header__menu1"></span>
+                    <span class="header__menu3 header__menu-pad "></span>
+                    <span class="header__menu2 "></span>
                 </div>
 
                 
@@ -99,6 +103,9 @@
     <section class="means">
         <div class="container">
             <div class="means__inner">
+                <div class="means__services">
+                    <h2>Services</h2>
+                </div>
                 <div class="means__item">
                     <h2 class="means__title">Ground shipping</h2>
                     <div class="means__text ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</div>
@@ -135,7 +142,7 @@
                     </div>
                 </div>
 
-                <h2 class="means__services">Services</h2>
+                
             </div>
         </div>
     </section>
@@ -148,50 +155,50 @@
                     <ul class="clients__list">
 
                         <li>
-                            <a class="clients__logo1" target="_blank" href="">
-                                <img src="img/logo1.svg" alt="/">
+                            <a target="_blank" href="">
+                                <img class="img" src="img/logo1.svg" alt="/">
                             </a>
                         </li>
 
                         <li>
-                            <a class="clients__logo2" target="_blank" href="">
-                                <img src="img/logo2.svg" alt="/">
+                            <a  target="_blank" href="">
+                                <img class="img" src="img/logo2.svg" alt="/">
                             </a> 
                         </li>  
 
                         <li>
-                            <a class="clients__logo3" target="_blank" href="">
-                                <img src="img/logo3.svg"  alt="/">
+                            <a  target="_blank" href="">
+                                <img class="img" src="img/logo3.svg"  alt="/">
                             </a>
                         </li>
 
                         <li>   
-                            <a class="clients__logo4" target="_blank" href="">
-                                <img src="img/logo4.svg" alt="/">
+                            <a target="_blank" href="">
+                                <img class="img" src="img/logo4.svg" alt="/">
                             </a>
                         </li>
 
                         <li>
-                            <a  class="clients__logo5" target="_blank" href="">
-                                <img src="img/logo5.svg" alt="/">
+                            <a  target="_blank" href="">
+                                <img class="img" src="img/logo5.svg" alt="/">
                             </a>
                         </li>
 
                         <li>
-                            <a class="clients__logo6" target="_blank" href="">
-                                <img src="img/logo6.svg" alt="/">
+                            <a  target="_blank" href="">
+                                <img class="img" src="img/logo6.svg" alt="/">
                             </a>
                         </li>
                         
                         <li>
-                        <a class="clients__logo7" target="_blank" href="">
-                            <img src="img/logo7.svg" alt="/">
+                        <a  target="_blank" href="">
+                            <img class="img" src="img/logo7.svg" alt="/">
                         </a>
                         </li>
 
                         <li>
-                        <a class="clients__logo8" target="_blank" href="">
-                            <img src="img/logo8.svg" alt="/">
+                        <a  target="_blank" href="">
+                            <img class="img" src="img/logo8.svg" alt="/">
                         </a>
                         </li>
 
@@ -364,10 +371,80 @@
             </ul>
             
         </div>
-        
-        
     </footer>
 
-    
+    <div class="modal" id="DeliverModal">
+        <div class="container">
+            <div class="modal__wrapper">
+                <div class="modal__inner">
+                    <h2 class="modal__title">Need to deliver your cargo? <br>
+                        We can help!</h2>
+                    <div class="modal__subtitle">Fill a little form and we will call you back!</div>
+
+                    <div class="modal__wrapper2">                          
+                        <form class="modal__form" action="/">
+                            <div class="modal__group">
+                                <input class="modal_line iconblack1" type="text" placeholder="Your name">
+                                <input class="modal_line iconblack2" type="tel" placeholder="Your phone">
+                                <input class="modal_line iconblack3" type="email" placeholder="Your e-mail">
+                            </div>
+                        </form>
+
+                        <div class="modal__button">                       
+                            <button class="modal__btn button2">Call me back</button>
+                            <hr class="modal__stick">
+                        </div> 
+                    </div>
+                    <div class="modal__contacts">
+                        <div class="modal__contacts_title">Our contacts</div>
+                        <div class="modal__contacts_info">
+                            New York, Street, ZIP code <br>
+                            Phone: <a href="tel:+9948373123 ">+9948373123</a>  <br>
+                            E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+                        </div>
+
+                    </div>
+
+                    <button class="modal__close" type="button"> 
+                        <img src="img/close.svg" alt="/">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="ThanksModal" >
+        <div class="container">
+            <div class="modal__wrapper">
+                <div class="modal__inner">
+                    <img class="modal__logo" src="/img/tick.svg" alt="/">
+                    <h2 class="modal__title">Thanks for your request</h2>
+                    <div class="modal__subtitle">We call you back as soon as possible!</div>
+
+                    <hr class="modal__stick">
+
+                    
+                    <div class="modal__contacts">
+                        <div class="modal__contacts_title">Our contacts</div>
+                        <div class="modal__contacts_info">
+                            New York, Street, ZIP code <br>
+                            Phone: <a href="tel:+9948373123 ">+9948373123</a>  <br>
+                            E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+                        </div>
+                    </div>
+
+                    <button class="modal__close" type="button"> 
+                        <img src="img/close.svg" alt="/">
+                    </button>
+
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+ 
 </body>
 </html>
