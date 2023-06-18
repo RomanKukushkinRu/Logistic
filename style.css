@@ -998,8 +998,22 @@ margin-bottom: 20px;
 
 /* Modals */
 
+.modal__fade {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2000;
+    transition: display 0.8s ease-in-out;
+}
 
-.modal {
+.hidden {
+    display: none;
+}
+
+/* .modal {
     display: none;
     justify-content: center;
     align-items: center;
@@ -1011,7 +1025,7 @@ margin-bottom: 20px;
     top: 0;
     left: 0;
     z-index: 2000;
-}
+} */
 
 .show {
     display: flex;
@@ -1024,7 +1038,6 @@ margin-bottom: 20px;
     padding: 25px;
     text-align: center;
     line-height: 1.1;
-    margin-bottom: 10px;
     position: relative;
 }
 
@@ -1039,6 +1052,10 @@ margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -2488,6 +2505,14 @@ margin-bottom: 20px;
         min-height: 110px;
     }
 }
+
+
+
+
+
+
+
+
 
     
 

@@ -205,7 +205,7 @@
                     </ul>
 
                     <div class="clients__button-wrapper">
-                        <div class="clients__button button">Become a client</div>
+                        <button class="clients__button button" data-modal-button01>Become a client</button>
                         <div   div class="clients__text">we love our clients
                             <span><img class="clients__heart" src="img/heart.svg" alt="/"></span>
                         </div>
@@ -232,7 +232,7 @@
                     </div>
 
                     <div class="clients__button-wrapper2">
-                        <button class="clients__button button">Become a client</button>
+                        <button class="clients__button button" data-modal-button02="">Become a client</button>
                         <div   div class="clients__text">we love our clients
                             <span><img class="clients__heart" src="img/heart.svg" alt="/"></span>
                         </div>
@@ -335,7 +335,7 @@
                 <hr class="mission__line">
             </div>
             <div class="text-center">
-                <button type="button" class="mission__btn button">Become a client</button>
+                <button type="button" class="mission__btn button" data-modal-button03>Become a client</button>
             </div>
         </div>
     </section>
@@ -373,47 +373,45 @@
         </div>
     </footer>
 
-    <div class="modal" id="DeliverModal">
-        <div class="container">
-            <div class="modal__wrapper">
-                <div class="modal__inner">
-                    <h2 class="modal__title">Need to deliver your cargo? <br>
-                        We can help!</h2>
-                    <div class="modal__subtitle">Fill a little form and we will call you back!</div>
+    <div  id="DeliverModal" data-modal class="modal__fade hidden">
+        <div class="modal__wrapper">
+            <div class="modal__inner">
+                <h2 class="modal__title">Need to deliver your cargo? <br>
+                    We can help!</h2>
+                <div class="modal__subtitle">Fill a little form and we will call you back!</div>
 
-                    <div class="modal__wrapper2">                          
-                        <form class="modal__form" action="/">
-                            <div class="modal__group">
-                                <input class="modal_line iconblack1" type="text" placeholder="Your name">
-                                <input class="modal_line iconblack2" type="tel" placeholder="Your phone">
-                                <input class="modal_line iconblack3" type="email" placeholder="Your e-mail">
-                            </div>
-                        </form>
-
-                        <div class="modal__button">                       
-                            <button class="modal__btn button2">Call me back</button>
-                            <hr class="modal__stick">
-                        </div> 
-                    </div>
-                    <div class="modal__contacts">
-                        <div class="modal__contacts_title">Our contacts</div>
-                        <div class="modal__contacts_info">
-                            New York, Street, ZIP code <br>
-                            Phone: <a href="tel:+9948373123 ">+9948373123</a>  <br>
-                            E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+                <div class="modal__wrapper2">                          
+                    <form class="modal__form" action="/">
+                        <div class="modal__group">
+                            <input class="modal_line iconblack1" type="text" placeholder="Your name">
+                            <input class="modal_line iconblack2" type="tel" placeholder="Your phone">
+                            <input class="modal_line iconblack3" type="email" placeholder="Your e-mail">
                         </div>
+                    </form>
 
+                    <div class="modal__button">                       
+                        <button class="modal__btn button2">Call me back</button>
+                        <hr class="modal__stick">
+                    </div> 
+                </div>
+                <div class="modal__contacts">
+                    <div class="modal__contacts_title">Our contacts</div>
+                    <div class="modal__contacts_info">
+                        New York, Street, ZIP code <br>
+                        Phone: <a href="tel:+9948373123 ">+9948373123</a>  <br>
+                        E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
                     </div>
 
-                    <button class="modal__close" type="button"> 
-                        <img src="img/close.svg" alt="/">
-                    </button>
                 </div>
+
+                <button class="modal__close" data-modal-close type="button"> 
+                    <img src="img/close.svg" alt="/">
+                </button>
             </div>
         </div>
     </div>
 
-    <div class="modal" id="ThanksModal" >
+    <!-- <div class="modal" id="ThanksModal" >
         <div class="container">
             <div class="modal__wrapper">
                 <div class="modal__inner">
@@ -441,7 +439,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+        
 
 
     <script src="script.js"></script>
