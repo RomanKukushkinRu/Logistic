@@ -23,29 +23,39 @@ const button03 = document.querySelector('[data-modal-button03]');
 const modal = document.querySelector('[data-modal]');
 const buttonClose = document.querySelector('[data-modal-close]');
 
+const Body = document.querySelector('body'); // Требуется для отключения скролла при открытом поп апе.
+
 
 // Прослушиваем клик на кнопках открытия и Открываем модалку
 
 button01.addEventListener('click', function (){
     modal.classList.remove('hidden'); 
+    Body.classList.add('lock'); //Добавляет класс lock к тегу body, который ограничивает скролл
 })
 
 button02.addEventListener('click', function(){
     modal.classList.remove('hidden');
+    Body.classList.add('lock'); //Добавляет класс lock к тегу body, который ограничивает скролл
 })
 
 button03.addEventListener('click', function(){
     modal.classList.remove('hidden');
+    Body.classList.add('lock'); //Добавляет класс lock к тегу body, который ограничивает скролл
 })
 
 
 // Прослушиваем клик на кнопке закрытия и Закрываем модалку
 buttonClose.addEventListener('click', function (){
     modal.classList.add('hidden');
+    Body.classList.remove('lock'); //Удаляет класс lock к тегу body, который ограничивает скролл
 } )
 
+
+
+//ЗАКРЫТИЕ ПО КЛИКУ НА ФОН - Прослушиваем клик на закрытие по модалке, чтобы дальше отключить закрытие по телу модалки(останется отключение по фону)
 modal.addEventListener('click', function (){
     modal.classList.add('hidden');
+    Body.classList.remove('lock'); //Удаляет класс lock к тегу body, который ограничивает скролл
 })
 
 
