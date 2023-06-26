@@ -61,12 +61,12 @@
                         <div class="intro__wrapper2">                          
                             <form class="form" action="/">
                                 <div class="form__group">
-                                    <input class="intro_line icon1" type="text" placeholder="Your name">
-                                    <input class="intro_line icon2" type="tel" placeholder="Your phone">
-                                    <input class="intro_line icon3" type="email" placeholder="Your e-mail">
+                                    <input class="intro_line icon1 intro_line_js01" data-form type="text" placeholder="Your name">
+                                    <input class="intro_line icon2 intro_line_js02" data-form type="tel" placeholder="Your phone">
+                                    <input class="intro_line icon3 intro_line_js03" data-form type="email" placeholder="Your e-mail">
                                 </div>
                             </form>                        
-                            <button class="btn button btn515px">Call me back</button>
+                            <button class="btn button btn515px" data-modal-button04>Call me back</button>
                         </div>
                     </div>
                 </div>
@@ -373,7 +373,7 @@
         </div>
     </footer>
 
-    <div  id="DeliverModal" data-modal class="modal__fade hidden">
+    <div data-modal_1 class="modal__fade hidden">
         <div class="modal__wrapper">
             <div class="modal__inner">
                 <h2 class="modal__title">Need to deliver your cargo? <br>
@@ -383,14 +383,14 @@
                 <div class="modal__wrapper2">                          
                     <form class="modal__form" action="/">
                         <div class="modal__group">
-                            <input class="modal_line iconblack1" type="text" placeholder="Your name">
-                            <input class="modal_line iconblack2" type="tel" placeholder="Your phone">
-                            <input class="modal_line iconblack3" type="email" placeholder="Your e-mail">
+                            <input class="modal_line iconblack1 intro_line_js04" type="text" placeholder="Your name">
+                            <input class="modal_line iconblack2 intro_line_js05" type="tel" placeholder="Your phone">
+                            <input class="modal_line iconblack3 intro_line_js06" type="email" placeholder="Your e-mail">
                         </div>
                     </form>
 
                     <div class="modal__button">                       
-                        <button class="modal__btn button2">Call me back</button>
+                        <button class="modal__btn button2" data-modal-open-close01 >Call me back</button>
                         <hr class="modal__stick">
                     </div> 
                 </div>
@@ -404,42 +404,40 @@
 
                 </div>
 
-                <button class="modal__close" data-modal-close type="button"> 
+                <button class="modal__close" data-modal-close01 type="button"> 
                     <img src="img/close.svg" alt="/">
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- <div class="modal" id="ThanksModal" >
-        <div class="container">
-            <div class="modal__wrapper">
-                <div class="modal__inner">
-                    <img class="modal__logo" src="/img/tick.svg" alt="/">
-                    <h2 class="modal__title">Thanks for your request</h2>
-                    <div class="modal__subtitle">We call you back as soon as possible!</div>
+    <div data-modal_2 class="modal__fade hidden">
+        <div class="modal__wrapper">
+            <div class="modal__inner">
+                <img class="modal__logo" src="/img/tick.svg" alt="/">
+                <h2 class="modal__title">Thanks for your request</h2>
+                <div class="modal__subtitle">We call you back as soon as possible!</div>
 
-                    <hr class="modal__stick">
-
-                    
-                    <div class="modal__contacts">
-                        <div class="modal__contacts_title">Our contacts</div>
-                        <div class="modal__contacts_info">
-                            New York, Street, ZIP code <br>
-                            Phone: <a href="tel:+9948373123 ">+9948373123</a>  <br>
-                            E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
-                        </div>
-                    </div>
-
-                    <button class="modal__close" type="button"> 
-                        <img src="img/close.svg" alt="/">
-                    </button>
+                <hr class="modal__stick">
 
                 
+                <div class="modal__contacts">
+                    <div class="modal__contacts_title">Our contacts</div>
+                    <div class="modal__contacts_info">
+                        New York, Street, ZIP code <br>
+                        Phone: <a href="tel:+9948373123 ">+9948373123</a>  <br>
+                        E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+                    </div>
                 </div>
+
+                <button class="modal__close" data-modal-close02 type="button"> 
+                    <img src="img/close.svg" alt="/">
+                </button>
+
+            
             </div>
         </div>
-    </div> -->
+    </div>
 
         
 
